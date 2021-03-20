@@ -19,7 +19,6 @@ class DiamondPrinterTest {
         assertThat(output, `is`(listOf("A")))
     }
 
-    @Ignore
     @Test
     fun testTwoByTwoDiamond() {
         val output = diamondPrinter.printToList('B')
@@ -29,7 +28,6 @@ class DiamondPrinterTest {
                 " A ")))
     }
 
-    @Ignore
     @Test
     fun testThreeByThreeDiamond() {
         val output = diamondPrinter.printToList('C')
@@ -41,23 +39,21 @@ class DiamondPrinterTest {
                 "  A  ")))
     }
 
-    @Ignore
     @Test
     fun testFiveByFiveDiamond() {
         val output = diamondPrinter.printToList('E')
         assertThat(output, `is`(listOf(
-                "    A    ",
-                "   B B   ",
-                "  C   C  ",
-                " D     D ",
-                "E       E",
+                "    A    ", // 65
+                "   B B   ", // 66
+                "  C   C  ", // 67
+                " D     D ", // 68
+                "E       E", // 69
                 " D     D ",
                 "  C   C  ",
                 "   B B   ",
                 "    A    ")))
     }
 
-    @Ignore
     @Test
     fun testFullDiamond() {
         val output = diamondPrinter.printToList('Z')
